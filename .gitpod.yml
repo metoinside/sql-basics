@@ -5,10 +5,6 @@ image: gitpod/workspace-full:latest
 tasks:
   - name: Install
     command: docker run -d -p 3000:3000 --name metabase metabase/metabase
-    
-  - name: Script Task
-    init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
-    command: echo 'start script'
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
